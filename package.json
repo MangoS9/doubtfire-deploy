@@ -6,6 +6,11 @@
     "@commitlint/config-conventional": "^17.0",
     "husky": "^7.0.4"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "scripts": {
     "prepare": "npx husky install"
   }
